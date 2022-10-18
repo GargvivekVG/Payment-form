@@ -10,22 +10,43 @@
 <body>
     <div Class="container">
         <form action="">
-            <h1 class="Main_heading" >Payment Form</h1>
-            <p>Required Fields are followed by *</p>
-            <h2>Contact Information</h2>
-            <p>Name: * <input type="text" name="name" required></p>
-            <fieldset>
-                <legend>Gender * </legend>
-                <p>
-                    Male <input type="radio" name="gender" id="male" required>
-                    Female <input type="radio" name="gender" id="female" required >
-                </p>
-            </fieldset>
-            <p>Address: <textarea name="address" id="" cols="100" rows="8"></textarea></p>
-            <p>Email: * <input type="email" name="email" id="email" required ></p>
-            <p>Pincode: * <input type="number" name="pincode" id="pincode" required ></p>
+            <h1 class="title" >Payment Form</h1>
+            <p>Required Fields are followed by <span>*</span></p>
+
+            <div class="contact-details">
+                <h2>Contact details</h2>
+            <div class="box">
+                <div class="input-box">
+                    <label for="">Name</label>
+                    <input type="text" name="name" required></p>
+                </div>
+                <div class="input-box">
+                    <label for="">Email</label>
+                    <input type="text" name="name" required></p>
+                </div>
+                <div class="gender-details">
+                    <h2 class="gender-title"> Gender</h2>
+                    <div class="category">
+                      
+                        <div> <input type="radio" name="gender" id="">Male </div>
+                        <div> <input type="radio" name="gender" id="">Female </div>
+                        <div> <input type="radio" name="gender" id="">Prefer not to say </div>
+                    </div>
+                </div>
+            </div>
+                <div class="input-box " id="address">
+                    <label for="">Address</label>
+                  <input class="" type="text">
+                      
+                    </textarea>
+                </div>
+            </div>
+           
+           <div class="payment-details">
             <h2>Payment Information</h2>
-            <p>Card Type: * 
+<div class="box">
+            <div class="input-box">
+                <label for="">Card type</label>
                 <select name="card_type" id="card_type" required>
                     <option value="">--Select a Card Type--</option>
                     <option value="Visa">visa</option>
@@ -33,16 +54,31 @@
                     <option value="Mastercard">mastercard</option>
 
                 </select>
-            </p>
-            <p>
-                Card Number * <input type="number" name="Card_number" id="Card_namber" required >
-            </p>
-            <p>
-                Expiration Date: * <input type="date" name="exp_date" id="exp_date" required >
-            </p>
-            <p>CVV * <input type="password" name="CVV" id="CVV" required ></p>
-            <input type="submit" value="Pay Now">
+            </div>
+            
+            <div class="input-box">
+                <label for="">Card Number</label>
+                <input type="number" name="" id="">
+            </div>
+            <div class="input-box">
+                <label for="">Expiry date</label>
+                <input type="number" name="" id="">
+            </div>
+            <div class="input-box">
+                <label for="">CVV</label>
+                <input type="number" name="" id="">
+            </div>
 
+
+        </div>
+
+           </div>
+
+           <div class="submit-btn">
+            <button>Pay now</button>
+           </div>
+            
+           
         </form>
     </div>
 </body>
